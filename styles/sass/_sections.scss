@@ -1,0 +1,27 @@
+.question1,
+.question2,
+.question3,
+.question4,
+.question5 {
+    background-color: black;
+    border: 1px solid gold;
+    border-radius: 3%;
+    text-align: center;
+    padding: 25px 0;
+}
+
+h3,
+p,
+label {
+    color: azure;
+    padding: 15px 0;
+}
+
+h3 {
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 2rem;
+}

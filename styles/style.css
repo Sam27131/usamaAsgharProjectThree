@@ -234,3 +234,84 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+html {
+  font-size: 62.5%;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+nav,
+p,
+img {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.wrapper {
+  max-width: 1280px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+body {
+  font-family: 'MedievalSharp', cursive;
+}
+
+header {
+  background-image: url(./assets/header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 50px 0;
+}
+
+h1,
+h2 {
+  color: mintcream;
+}
+
+h1 {
+  font-size: 8rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 5rem;
+}
+
+.question1,
+.question2,
+.question3,
+.question4,
+.question5 {
+  background-color: black;
+  border: 1px solid gold;
+  border-radius: 3%;
+  text-align: center;
+  padding: 25px 0;
+}
+
+h3,
+p,
+label {
+  color: azure;
+  padding: 15px 0;
+}
+
+h3 {
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 2rem;
+}
