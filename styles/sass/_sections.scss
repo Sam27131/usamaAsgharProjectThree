@@ -5,16 +5,25 @@
 .question5,
 .result {
     background-color: black;
-    border: 1px solid gold;
+    border: 1px solid goldenrod;
     border-radius: 3%;
     text-align: center;
+    p {
+        line-height: 1.5;
+    }
+}
+
+.question1,
+.question2,
+.question3,
+.question4,
+.question5 {
     padding: 25px 0;
 }
 
 h3,
 p,
 label {
-    color: azure;
     padding: 15px 0;
 }
 

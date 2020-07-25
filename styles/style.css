@@ -244,14 +244,34 @@ h1,
 h2,
 h3,
 p,
-img,
-fieldset {
+img {
   margin: 0;
   padding: 0;
 }
 
-a {
+a,
+button {
   text-decoration: none;
+  font-size: 2rem;
+  color: mintcream;
+  text-transform: capitalize;
+  background-color: goldenrod;
+  padding: 15px;
+  border-radius: 10%;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+a:hover,
+button:hover {
+  color: black;
+  border-radius: 20%;
+}
+
+button {
+  margin: 0 auto;
+  font-family: 'MedievalSharp', cursive;
+  border: none;
 }
 
 img {
@@ -267,19 +287,20 @@ img {
 
 body {
   font-family: 'MedievalSharp', cursive;
+  color: mintcream;
 }
 
 header {
-  background-image: url(./assets/header.jpg);
+  background-image: url(./assets/header2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
   padding: 50px 0;
 }
 
-h1,
-h2 {
-  color: mintcream;
+header a {
+  padding: 15px 150px;
+  font-size: 3rem;
 }
 
 h1 {
@@ -289,6 +310,8 @@ h1 {
 
 h2 {
   font-size: 5rem;
+  padding: 125px 0;
+  text-transform: capitalize;
 }
 
 .question1,
@@ -298,16 +321,31 @@ h2 {
 .question5,
 .result {
   background-color: black;
-  border: 1px solid gold;
+  border: 1px solid goldenrod;
   border-radius: 3%;
   text-align: center;
+}
+
+.question1 p,
+.question2 p,
+.question3 p,
+.question4 p,
+.question5 p,
+.result p {
+  line-height: 1.5;
+}
+
+.question1,
+.question2,
+.question3,
+.question4,
+.question5 {
   padding: 25px 0;
 }
 
 h3,
 p,
 label {
-  color: azure;
   padding: 15px 0;
 }
 

@@ -1,14 +1,13 @@
 header {
-    background-image: url(./assets/header.jpg);
+    background-image: url(./assets/header2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
     padding: 50px 0;
-}
-
-h1,
-h2 {
-    color: mintcream;
+    a {
+        padding: 15px 150px;
+        font-size: 3rem;
+    }
 }
 
 h1 {
@@ -18,4 +17,6 @@ h1 {
 
 h2 {
     font-size: 5rem;
+    padding: 125px 0;
+    text-transform: capitalize;
 }
