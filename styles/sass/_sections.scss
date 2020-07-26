@@ -5,8 +5,8 @@
 .question5,
 .result {
     background-color: black;
-    border: 1px solid goldenrod;
-    border-radius: 3%;
+    border: 2px solid goldenrod;
+    border-radius: 100px;
     text-align: center;
     p {
         line-height: 1.5;
@@ -24,7 +24,29 @@
 h3,
 p,
 label {
-    padding: 15px 0;
+    margin: 15px 0;
+}
+
+label {
+    font-size: 2.2rem;
+    transition: all 0.3s linear;
+}
+
+label:hover {
+    background: goldenrod;
+    padding: 5px;
+    border: 1px solid mintcream;
+    border-radius: 10px;
+    color: black;
+}
+
+label,
+input[type="radio"] {
+    vertical-align: middle;
+}
+
+input[type="radio"] {
+    background-color: red;
 }
 
 h3 {
@@ -45,4 +67,8 @@ form {
     flex-direction: column;
     align-items: flex-start;
     border: none;
+}
+
+.options {
+    padding: 25px 0 100px 0;
 }

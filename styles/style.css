@@ -253,11 +253,11 @@ a,
 button {
   text-decoration: none;
   font-size: 2rem;
-  color: mintcream;
+  color: whitesmoke;
   text-transform: capitalize;
   background-color: goldenrod;
   padding: 15px;
-  border-radius: 10%;
+  border-radius: 10px;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
@@ -265,7 +265,8 @@ button {
 a:hover,
 button:hover {
   color: black;
-  border-radius: 20%;
+  border: 2px solid mintcream;
+  border-radius: 50px;
 }
 
 button {
@@ -288,6 +289,7 @@ img {
 body {
   font-family: 'MedievalSharp', cursive;
   color: mintcream;
+  background-color: darkred;
 }
 
 header {
@@ -295,6 +297,8 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
+  border: 2px solid goldenrod;
+  border-radius: 100px;
   padding: 50px 0;
 }
 
@@ -306,6 +310,8 @@ header a {
 h1 {
   font-size: 8rem;
   text-transform: uppercase;
+  width: 70%;
+  text-align: left;
 }
 
 h2 {
@@ -321,8 +327,8 @@ h2 {
 .question5,
 .result {
   background-color: black;
-  border: 1px solid goldenrod;
-  border-radius: 3%;
+  border: 2px solid goldenrod;
+  border-radius: 100px;
   text-align: center;
 }
 
@@ -346,7 +352,30 @@ h2 {
 h3,
 p,
 label {
-  padding: 15px 0;
+  margin: 15px 0;
+}
+
+label {
+  font-size: 2.2rem;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+label:hover {
+  background: goldenrod;
+  padding: 5px;
+  border: 1px solid mintcream;
+  border-radius: 10px;
+  color: black;
+}
+
+label,
+input[type="radio"] {
+  vertical-align: middle;
+}
+
+input[type="radio"] {
+  background-color: red;
 }
 
 h3 {
@@ -374,4 +403,8 @@ form {
       -ms-flex-align: start;
           align-items: flex-start;
   border: none;
+}
+
+.options {
+  padding: 25px 0 100px 0;
 }
