@@ -244,19 +244,25 @@ h1,
 h2,
 h3,
 p,
-img {
+img,
+div {
   margin: 0;
   padding: 0;
+}
+
+img {
+  height: 300px;
+  width: 300px;
 }
 
 a,
 button {
   text-decoration: none;
-  font-size: 2rem;
-  color: whitesmoke;
+  font-size: 2.5rem;
+  color: black;
   text-transform: capitalize;
   background-color: goldenrod;
-  padding: 15px;
+  padding: 15px 150px;
   border-radius: 10px;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
@@ -264,20 +270,21 @@ button {
 
 a:hover,
 button:hover {
-  color: black;
   border: 2px solid mintcream;
   border-radius: 50px;
+}
+
+a:focus,
+button:focus,
+input[type="radio"]:focus {
+  border: 5px solid darkred;
 }
 
 button {
   margin: 0 auto;
   font-family: 'MedievalSharp', cursive;
   border: none;
-}
-
-img {
-  width: 100%;
-  display: block;
+  margin-top: 50px;
 }
 
 .wrapper {
@@ -292,8 +299,29 @@ body {
   background-color: darkred;
 }
 
+@media (max-width: 600px) {
+  a,
+  button {
+    padding: 15px 50px;
+  }
+}
+
+@media (max-width: 380px) {
+  img {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+@media (max-width: 350px) {
+  a,
+  button {
+    padding: 15px 25px;
+  }
+}
+
 header {
-  background-image: url(./assets/header2.jpg);
+  background-image: url(./assets/mainHeader.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
@@ -303,7 +331,6 @@ header {
 }
 
 header a {
-  padding: 15px 150px;
   font-size: 3rem;
 }
 
@@ -318,6 +345,33 @@ h2 {
   font-size: 5rem;
   padding: 125px 0;
   text-transform: capitalize;
+  text-align: left;
+}
+
+@media (max-width: 1024px) {
+  h1,
+  h2 {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 6rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 4.5rem;
+  }
+  h2 {
+    font-size: 2.8rem;
+  }
 }
 
 .question1,
@@ -325,7 +379,8 @@ h2 {
 .question3,
 .question4,
 .question5,
-.result {
+.result,
+footer {
   background-color: black;
   border: 2px solid goldenrod;
   border-radius: 100px;
@@ -337,7 +392,8 @@ h2 {
 .question3 p,
 .question4 p,
 .question5 p,
-.result p {
+.result p,
+footer p {
   line-height: 1.5;
 }
 
@@ -384,7 +440,7 @@ h3 {
 }
 
 p {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 div {
@@ -399,12 +455,52 @@ form {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  border: none;
+  text-align: left;
 }
 
 .options {
   padding: 25px 0 100px 0;
+}
+
+.options5 {
+  padding-bottom: 0;
+}
+
+.refresh,
+.buttonContainer {
+  display: none;
+}
+
+@media (max-width: 1175px) {
+  label {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 1075px) {
+  label {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 975px) {
+  label:hover {
+    background: none;
+    padding: 0;
+    border: none;
+    color: goldenrod;
+  }
+}
+
+@media (max-width: 480px) {
+  .question1 p,
+  .question2 p,
+  .question3 p,
+  .question4 p,
+  .question5 p,
+  .result p,
+  footer p {
+    line-height: 1.2;
+    font-size: 2.5rem;
+  }
 }

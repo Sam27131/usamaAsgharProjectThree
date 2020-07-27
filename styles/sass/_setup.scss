@@ -17,39 +17,46 @@ h1,
 h2,
 h3,
 p,
-img {
+img,
+div {
     margin: 0;
     padding: 0;
+}
+
+img {
+    height: 300px;
+    width: 300px;
 }
 
 a,
 button {
     text-decoration: none;
-    font-size: 2rem;
-    color: whitesmoke;
+    font-size: 2.5rem;
+    color: black;
     text-transform: capitalize;
     background-color: goldenrod;
-    padding: 15px;
+    padding: 15px 150px;
     border-radius: 10px;
     transition: all 0.3s linear;
 }
 
 a:hover,
 button:hover {
-    color: black;
     border: 2px solid mintcream;
     border-radius: 50px;
+}
+
+a:focus,
+button:focus,
+input[type="radio"]:focus {
+    border: 5px solid darkred;
 }
 
 button {
     margin: 0 auto;
     font-family: 'MedievalSharp', cursive;
     border: none;
-}
-
-img {
-    width: 100%;
-    display: block;
+    margin-top: 50px;
 }
 
 .wrapper {
@@ -62,4 +69,25 @@ body {
     font-family: 'MedievalSharp', cursive;
     color: mintcream;
     background-color: darkred;
+}
+
+@media (max-width: 600px) {
+    a,
+    button {
+        padding: 15px 50px;
+    }
+}
+
+@media (max-width: 380px) {
+    img {
+        height: 250px;
+        width: 250px;
+    }
+}
+
+@media (max-width: 350px) {
+    a,
+    button {
+        padding: 15px 25px;
+    }
 }
