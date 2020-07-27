@@ -1,4 +1,5 @@
 // Pseudocode:
+// ----------------------------------------------------------------------------------------------------------------
 
 // This quiz will ask the user to answer 5 personality based questions and click on a submit button when done
 // Based on their answers, the user will be matched to the character whose traits they relate to
