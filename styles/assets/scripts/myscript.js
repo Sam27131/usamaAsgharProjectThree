@@ -80,7 +80,7 @@ GOTQuiz.restartQuiz = () => {
 
 // A function to record the user's answers to the 5 questions
 GOTQuiz.submitQuestions = () => {
-    $('.calculateResults').one('click', function(event) {
+    $('.calculateResults').on('click', function(event) {
         // Prevent default when submitting the answer
         event.preventDefault();
         // Store the user's checked choices in an object named 'choices'
@@ -115,7 +115,7 @@ GOTQuiz.submitQuestions = () => {
                 <img src="./styles/assets/tyrionLannister.jpg" alt="Picture of Tyrion Lannister">
                 <p>${characterResult.tyrionLannister.characterDescription}</p>
             </div>
-        `);
+            `);
         } else if (daenerysChoice >= 3) {
             $(".result").css({
                 "padding": "50px 0"
@@ -129,7 +129,7 @@ GOTQuiz.submitQuestions = () => {
                 <img src="./styles/assets/daenerys.jpg" alt="Picture of Daenerys Targaryen">
                 <p>${characterResult.daenerysTargaryen.characterDescription}</p>        
             </div>
-        `);
+            `);
         } else if (jonChoice >= 3) {
             $(".result").css({
                 "padding": "50px 0"
@@ -143,7 +143,7 @@ GOTQuiz.submitQuestions = () => {
                 <img src="./styles/assets/jonSnow.png" alt="Picture of Jon Snow">
                 <p>${characterResult.jonSnow.characterDescription}</p>
             </div>
-        `);
+            `);
         } else if (robbChoice >= 3) {
             $(".result").css({
                 "padding": "50px 0"
@@ -157,7 +157,7 @@ GOTQuiz.submitQuestions = () => {
                 <img src="./styles/assets/robbStark.jpg" alt="Picture of Robb Stark">
                 <p>${characterResult.robbStark.characterDescription}</p>
             </div>
-        `);
+            `);
         } else if (nedChoice >= 3) {
             $(".result").css({
                 "padding": "50px 0"
@@ -171,7 +171,7 @@ GOTQuiz.submitQuestions = () => {
                 <img src="./styles/assets/nedStark.jpg" alt="Picture of Ned Stark">
                 <p>${characterResult.nedStark.characterDescription}</p>
             </div>
-        `);
+            `);
         // A special circumstances result where the length of each property is 1
         } else if (tyrionChoice && daenerysChoice && jonChoice && robbChoice && nedChoice === 1) {
             $(".result").css({
@@ -186,7 +186,9 @@ GOTQuiz.submitQuestions = () => {
                 <img src="./styles/assets/threeEyedRaven.jpeg" alt="Picture of Three Eyed Raven">
                 <p>${characterResult.threeEyedRaven.characterDescription}</p>
             </div>
-        `);
+            `);
+        } else if (tyrionChoice + daenerysChoice + jonChoice + robbChoice + nedChoice !== 5) {
+            alert("Please fill out all the questions")
         } else { // Below code was created referencing example from following website https://stackoverflow.com/questions/45580928/using-jquery-and-math-random-to-select-nested-objects-properties
             // Credits go to user adeneo
             // This code will run when user selection results in two characters having an equal length of 2
